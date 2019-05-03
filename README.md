@@ -8,6 +8,7 @@ https://developer.spotify.com/dashboard/tos-accept and create an account to get 
 Register and get the following keys:
 
 Client ID **************************
+
 Client Secret **********************
 
 Create a file called '.env' inside the 'liri' root folder.  Paste the following code inside '.env' replacing the 'your-spotify-id' and 'your-spotify-secret' with the id and secret from your Spotify API key.
@@ -16,6 +17,7 @@ Create a file called '.env' inside the 'liri' root folder.  Paste the following 
 # Spotify API keys
 
 SPOTIFY_ID=your-spotify-id
+
 SPOTIFY_SECRET=your-spotify-secret
 **********
 
