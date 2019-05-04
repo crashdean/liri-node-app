@@ -3,37 +3,40 @@
 var axios = require("axios");
 
 
-// var movieName = process.argv[2];
-// var key =  be12d235
 
 
-// var queryUrl = "http://www.omdbapi.com/?t=" + movieName + "&y=&plot=short&apikey=trilogy";
+var commandQuery = process.argv[2];
+var search = process.argv.slice(3).join(" ");
 
-// console.log(queryUrl);
+  switch (commandQuery) {
+    case "concert-this":
+    console.log(search);
+    bandsInTown();
+      break;
+      case "spotify-this-song":
+  what();
+      break;
+     case  "movie-this":
+    now();
+      break;
+      case "do-what-it-says":
+    yes();
+      break;
+  
+  }
 
-// axios.get(queryUrl).then(
-//   function(response) {
-//     console.log("Release Year: " + response.data.Year);
-//     console.log(response.data);
-//   }
-// );
 
-var search = process.argv[2];
 
-var artist = process.argv.slice(2).join(" ");
-console.log(artist);
 
-axios
-  .get("https://rest.bandsintown.com/artists/" + artist + "/events?app_id=codingbootcamp")
+
+function bandsInTown() {
+axios.get("https://rest.bandsintown.com/artists/" + search + "/events?app_id=codingbootcamp")
   .then(function(response) {
-    // If the axios was successful...
-    // Then log the body from the site!
+    
     console.log(response.data[0].venue.name);
-    // var Artist = function() {
-    //     this.venueName = response.venue.name;
-    //     this.location = location;
-    //     this.date = date;
-    // }
+    console.log(response.data[0].venue.city);
+    console.log(response.data[0].datetime);
+    
   })
 
-  
+}
