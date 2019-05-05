@@ -37,11 +37,10 @@ function spotifyBands() {
       if (err) {
         return console.log('Error occurred: ' + err);
       }
-      console.log(data.tracks.artists);
-      console.log("The artist is: " + data.tracks.items[0].artists.type);
-      console.log("The song's name is: ", songData.album.artists[0].name);
-      console.log("Preview this song: " + data.tracks.items[0].preview_url);
-      console.log("The song is from the album: " + data.tracks.items[0].album.name);
+      console.log("The artist is " + data.tracks.items[0].artists[0].name);
+      console.log("The song is " + data.tracks.items[0].name);
+      console.log("To preview song click " + data.tracks.items[0].preview_url);
+      console.log("The song is from the album " + data.tracks.items[0].name);
     }
     )
   }
@@ -50,10 +49,10 @@ function spotifyBands() {
       if (err) {
         return console.log('Error occurred: ' + err);
       }
-      console.log("The artist is: " + data.tracks.items[0].artists.type);
-      console.log("The song's name is: ", songData.album.artists[0].name);
-      console.log("To preview song click: " + data.tracks.items[0].preview_url);
-      console.log("The song is from the album: " + data.tracks.items[0].album.name);
+      console.log("The artist is " + data.tracks.items[0].artists[0].name);
+      console.log("The song is " + data.tracks.items[0].name);
+      console.log("To preview song click " + data.tracks.items[0].preview_url);
+      console.log("The song is from the album " + data.tracks.items[0].name);
     });
   }
 }
@@ -61,7 +60,7 @@ function movieSearch() {
   if (artistMovieSearch) {
     axios.get("http://www.omdbapi.com/?t=" + artistMovieSearch + "&y=&plot=short&apikey=trilogy")
       .then(function (response) {
-        console.log(response.data);
+        // console.log(response.data);
         console.log("The Ttitle of the movie is: " + response.data.Title);
         console.log("The year the movie came out is: " + response.data.Year);
         console.log("The rating of this movie is: " + response.data.Rated);
@@ -75,7 +74,7 @@ function movieSearch() {
   else {
     axios.get("http://www.omdbapi.com/?t=mr.nobody&y=&plot=short&apikey=trilogy")
       .then(function (response) {
-        console.log(response.data);
+        // console.log(response.data);
         console.log("The Ttitle of the movie is: " + response.data.Title);
         console.log("The year the movie came out is: " + response.data.Year);
         console.log("The rating of this movie is: " + response.data.Rated);
@@ -102,10 +101,10 @@ function doWhatItSays() {
       if (err) {
         return console.log('Error occurred: ' + err);
       }
-      console.log("The artist is " + data.tracks.items[0].artists.type);
-      // console.log("Artist Name: ", songData.album.artists[0].name);
+      console.log("The artist is " + data.tracks.items[0].artists[0].name);
+      console.log("The song is " + data.tracks.items[0].name);
       console.log("To preview song click " + data.tracks.items[0].preview_url);
-      console.log("The song is from the album " + data.tracks.items[0].album.name);
+      console.log("The song is from the album " + data.tracks.items[0].name);
     }
     )
   });
