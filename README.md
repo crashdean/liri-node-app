@@ -1,9 +1,9 @@
 # liri-node-app
 
-This app will create a LIRI (Language Interpretationand Recognition Interface).  The liri app will search for songs and bands of concerts in town and using Spotify API.   The liri app will also search OMDB API for movies.
+This application will create a LIRI (Language Interpretationand Recognition Interface).  The liri application will search for songs and bands of concerts in town and using Spotify API.   The liri application will also search OMDB API for movies.
 
 ****IMPORTANT*****
-This app needs an API key and a Spotify secret from Spotifty to work. Please log in to:
+This application needs an API key and a Spotify secret from Spotifty to work. Please log in to:
 https://developer.spotify.com/dashboard/tos-accept and create an account to get this from Spotify.
 Register and get the following keys:
 
@@ -20,5 +20,7 @@ SPOTIFY_ID=your-spotify-id
 
 SPOTIFY_SECRET=your-spotify-secret
 **********
+This application is a node based and runs on Command line input.  It is a simple application which allows users to see the functionality of the node environment and the ease of testing applications there.   
+
 
 
