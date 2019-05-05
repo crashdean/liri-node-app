@@ -31,4 +31,4 @@ https://github.com/crashdean/liri-node-app/blob/master/assets/images/Screenshot%
 
 https://github.com/crashdean/liri-node-app/blob/master/assets/images/Screenshot%20(10).png
 
-https://github.com/crashdean/liri-node-app/blob/master/assets/images/Screenshot%20(14).png
+https://github.com/crashdean/liri-node-app/blob/master/assets/images/Screenshot%20(19).png
