@@ -23,4 +23,4 @@ SPOTIFY_SECRET=your-spotify-secret
 This application is a node based and runs on Command line input.  It is a simple application which allows users to see the functionality of the node environment and the ease of testing applications there.   
 
 
-
+https://github.com/crashdean/liri-node-app/blob/master/assets/images/Screenshot%20(7).png
